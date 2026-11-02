@@ -22,3 +22,10 @@ returns.columns = ["bank", "system"]
 
 print(returns.head())
 print(returns.describe())
+
+# Sanity check: the worst days should be crises we recognise
+print("\nWorst 10 days for the system:")
+print(returns["system"].nsmallest(10))
+
+print("\nWorst 10 days for the bank:")
+print(returns["bank"].nsmallest(10))
