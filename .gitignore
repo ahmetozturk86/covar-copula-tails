@@ -13,3 +13,6 @@ venv/
 # Raw data
 data/raw/
 data/*.csv
+
+# Package install files
+*.egg-info/
